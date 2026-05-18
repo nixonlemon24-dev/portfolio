@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -19,10 +16,8 @@
         <div class="logo">My Portfo<span style="color: white;">lio.</span></div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -35,7 +30,7 @@
             <p class="hero-sub">Passionate about building interactive applications and experiences on the web.</p>
             <div class="hero-btns">
                 <a href="#projects" class="btn">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
+                <button id="resume-btn" class="btn btn-outline">Resume</button>
             </div>
             <div class="hero-stats">
                 <div class="hero-stat">
@@ -44,50 +39,13 @@
                 </div>
                 <div class="hero-divider"></div>
                 <div class="hero-stat">
-                    <strong>1</strong>
+                    <strong>3</strong>
                     <span>Projects Built</span>
-                </div>
-                <div class="hero-divider"></div>
-                <div class="hero-stat">
-                    <strong>5+</strong>
-                    <span>Technologies</span>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
             <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2 class="section-title"><span>About Me</span></h2>
-        <div class="about-container">
-            <div class="about-img">
-                <!-- Replace src with your image -->
-                <img src="https://via.placeholder.com/400x400" alt="Profile Picture">
-            </div>
-            <div class="about-text">
-                <h3>Who am I?</h3>
-                <p style="color: var(--text-gray); margin-top: 10px;">
-                    I am a passionate developer with experience in building websites using HTML, CSS, JavaScript, ASP.NET and C#. I love solving problems and turning ideas into reality through code.
-                </p>
-                <div class="skills">
-                    <span class="skill-tag">HTML5</span>
-                    <span class="skill-tag">CSS3</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Bootstrap</span>
-                    <span class="skill-tag">C#</span>
-                    <span class="skill-tag">Asp.Net</span>
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">MS SQL</span>
-                    <span class="skill-tag">TSQL</span>
-                    <span class="skill-tag">Adobe Fireworks</span>
-                    <span class="skill-tag">Adobe Photoshop</span>
-                    <span class="skill-tag">Adobe Premiere</span>
-                    <span class="skill-tag">Canva</span>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -111,7 +69,7 @@
                         <span class="skill-tag-experience">CSS3</span>
                         <span class="skill-tag-experience">JavaScript</span>
                         <span class="skill-tag-experience">C#</span>
-                        <span class="skill-tag-experience">Asp.Net</span>
+                        <span class="skill-tag-experience">ASP.NET</span>
                         <span class="skill-tag-experience">MS SQL</span>
                         <span class="skill-tag-experience">TSQL</span>
                     </div>
@@ -142,6 +100,26 @@
                     <div class="timeline-dot"></div>
                 </div>
                 <div class="timeline-content">
+                    <span class="timeline-date">Sept 2019 – Dec 2020</span>
+                    <h3>Thesis Leader/ Full Stack Developer - Recollection Management System</h3>
+                    <p class="timeline-company"><i class="fas fa-building"></i> Saint Louis University Parish Office</p>
+                    <span class="timeline-duration">1 yr+</span>
+                     <div class="skills">
+                        <span class="skill-tag-experience">HTML</span>
+                        <span class="skill-tag-experience">CSS</span>
+                        <span class="skill-tag-experience">JavaScript</span>
+                        <span class="skill-tag-experience">Bootstrap</span>
+                        <span class="skill-tag-experience">PHP</span>
+                        <span class="skill-tag-experience">SQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-content">
                     <span class="timeline-date">Jun 2019 – Aug 2019</span>
                     <h3>UI/UX and Website Designer Intern</h3>
                     <p class="timeline-company"><i class="fas fa-building"></i> ITECH-PFS Technology Inc.</p>
@@ -152,86 +130,96 @@
                 </div>
             </div>
 
+
         </div>
-    </section>
+
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section> 
 
     <!-- Projects Section -->
     <section id="projects">
+         <div class="projects-background"></div>
         <h2 class="section-title"><span>My Projects</span></h2>
         <div class="projects-grid">
             
-            <!-- Project 1 -->
-            <div class="project-card">
+            <div class="timeline-content">
                 <div class="project-img">
                     <i class="fas fa-laptop-code fa-3x"></i>
                 </div>
                 <div class="project-info">
-                    <h3>E-Commerce Dashboard</h3>
-                    <p>A responsive dashboard for managing online store inventory and sales stats.</p>
+                    <h3>Job Hunt</h3>
+                    <p>A job search application that helps users find and apply for employment opportunities.</p>
                     <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/nixonlemon24-dev/JobHuntBot" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
                     </div>
+
+                    <div class="skills">
+                        <span class="skill-tag-experience">HTML</span>
+                        <span class="skill-tag-experience">CSS</span>
+                        <span class="skill-tag-experience">JavaScript</span>
+                        <span class="skill-tag-experience">React JS</span>
+                        <span class="skill-tag-experience">Firebase</span>
+                        <span class="skill-tag-experience">API</span>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- Project 2 -->
-            <div class="project-card">
+            
+            <div class="timeline-content">
                 <div class="project-img">
-                    <i class="fas fa-mobile-alt fa-3x"></i>
+                    <i class="fas fa-laptop-code fa-3x"></i>
                 </div>
                 <div class="project-info">
-                    <h3>Weather App</h3>
-                    <p>A weather forecasting application using OpenWeatherMap API.</p>
+                    <h3>Recollection Management System</h3>
+                    <p>A web-based system for managing and tracking student attendance during recollection events.</p>
                     <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        <a target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
                     </div>
+
+                    <div class="skills">
+                        <span class="skill-tag-experience">HTML</span>
+                        <span class="skill-tag-experience">CSS</span>
+                        <span class="skill-tag-experience">JavaScript</span>
+                        <span class="skill-tag-experience">Bootstrap</span>
+                        <span class="skill-tag-experience">PHP</span>
+                        <span class="skill-tag-experience">SQL</span>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- Project 3 -->
-            <div class="project-card">
+            <div class="timeline-content">
                 <div class="project-img">
-                    <i class="fas fa-gamepad fa-3x"></i>
+                    <i class="fas fa-laptop-code fa-3x"></i>
                 </div>
                 <div class="project-info">
-                    <h3>JS Tic-Tac-Toe</h3>
-                    <p>A classic Tic-Tac-Toe game built with pure JavaScript.</p>
+                    <h3>Gym Trainer Tracker</h3>
+                    <p>Ongoing project to track gym trainer activities and client progress.</p>
                     <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        <a target="_blank" ><i class="fab fa-github"></i></a>
+                        <a target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>
 
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2 class="section-title"><span>Get In Touch</span></h2>
-        <div class="contact-container">
-            <p style="color: var(--text-gray); margin-bottom: 2rem;">
-                Have a project in mind or just want to say hi? Feel free to send me a message.
-            </p>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+       
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="social-links">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/nixonlemon24-dev" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a><i class="fab fa-linkedin"></i></a>
+            <a><i class="fab fa-twitter"></i></a>
         </div>
-        <p>&copy; 2023 Alex Dev. All Rights Reserved.</p>
+        <p>&copy; 2026 Nixon. All Rights Reserved.</p>
     </footer>
 
 </body>

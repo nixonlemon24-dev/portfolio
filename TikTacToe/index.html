@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Tic <span style="color: white;"> </s>Tac</span> Toe</span></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <h1><span>Tic Tac</span>Toe</h1>
+            <div class ="score-boards">
+                <p class="hero-label-x"><span class = "dot"></span> X - <span id="player-score">0</span></p>
+                <p class="hero-label-o"><span class = "dot"></span> O - <span id="computer-score">0</span></p>
+            </div>
+            <!--<p class="hero-sub">Passionate about building interactive applications and experiences on the web.</p> -->
+            <!-- <div class="hero-btns"> -->
+        <table class = "game-board">
+            <tbody>
+                <div id="message-container">
+                    <div id = "winner-message"> <h2><span class="winner-display"></span></h2> 
+                </div>
+                
+                <tr>
+                    <td class="game-cell"><span class="cell-text"></span></td>
+                    <td class="game-cell"><span class="cell-text"></span></td>
+                    <td class="game-cell"><span class="cell-text"></span></td>
+                </tr>
+                <tr>
+                    <td class="game-cell"><span class="cell-text"></span></td>
+                    <td class="game-cell"><span class="cell-text"></span></td>
+                    <td class="game-cell"><span class="cell-text"></span></td>
+                </tr> 
+                </tr>
+                <tr>
+                    <td class="game-cell"><span class="cell-text"></span></td>
+                    <td class="game-cell"><span class="cell-text"></span></td>
+                    <td class="game-cell"><span class="cell-text"></span></td>
+                </tr>
+
+        
+
+            </tbody>
+        </table>
+        <div class="hero-btns"><button id="restart-btn" class="btn">Restart Game</button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/nixonlemon24-dev" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a><i class="fab fa-linkedin"></i></a>
+            <a><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2026 Nixon. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
